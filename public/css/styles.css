@@ -1,0 +1,405 @@
+/*header {max-height: 200px }*/
+
+/*.banner {max-height: 10em;}*/
+/*#logo {max-height: 11em; max-width: 11em; }*/
+/*#mainNavigation {display: inline-block;}*/
+/*.nav-item{margin-right: 2em }*/
+
+/************************************************ GENERAL STYLING ************************************************/
+
+/**,
+*:before,
+*:after{
+    box-sizing: border-box;
+}*/
+
+:root{
+    --cl-width: 5vw;
+}
+
+h1, h2, h3, h4, h5{
+    margin: 0;
+}
+body{
+    margin: 0;
+}
+div {
+    margin: 0;
+}
+
+
+
+/* do not delete */
+.myDivider {
+    height: 1px;
+    background-color: gray;
+    opacity: 0.5;
+    margin: 10px 30px 10px 5px;
+}
+.carousel img {
+    height: 40vh;
+    width: 100%;
+    box-sizing: border-box;
+    object-fit: cover;
+
+}
+.fixed-top, .carousel, header,
+.carousel img  {
+    z-index: 99999999999;
+}
+
+.it-container{
+    /* margin-top: 1vh; */
+}
+
+#toggleSidebar{
+    /*background-color: #C7E3CC;*/
+}
+/************************************************  NAVIGATION BAR ************************************************/
+
+.navbar-nav .nav-item:hover{
+    color: black;
+    font-weight: 700;
+    transition: 100ms;
+
+
+}
+
+.dropdown-menu, a {
+    white-space: nowrap;
+}
+
+.nav-link {
+    text-transform: capitalize;
+}
+
+.btn-info{
+    box-shadow: none !important;
+    outline: none !important;
+    border: none;
+    white-space: nowrap;
+}
+
+.nav-pills .show>.nav-link{
+    background: none !important;
+}
+
+/************************************************   MAIN CONTENT   ************************************************/
+
+.wrapper{
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    margin-top: 0;
+
+}
+
+#mainContent {
+    margin: 0;
+}
+
+
+@media screen and (max-width: 726px){
+
+
+}
+
+
+
+
+/* CARD */
+.card {
+    margin-bottom: 1vh;
+}
+
+/* #sidebar .card *, #sidebar .card {
+    border: 0;
+    } */
+
+
+
+.card-footer, .card-header {
+    border: 0;
+}
+#sidebar .card-footer {
+    background-color: white !important;
+    border-top: 1px solid #dfe2e6;
+}
+#sidebar .card-footer:first-child {
+    border: 0;
+}
+/************************************************   SIDEBAR   ************************************************/
+
+
+
+
+.hide {
+    margin-right: -27vw ;
+}
+
+#sidebar{
+
+    /*display: none;*/
+    /* min-height: 48vh; */
+    height: 100%;
+    max-width: 24vw;
+
+    min-width: 24vw;
+    /*position: fixed;*/
+    /*z-index: 1;*/
+    /* top: 0; */
+    /* right: 0; */
+    margin-top: 3vh;
+    box-sizing: border-box;
+    padding-left: 3px;
+    overflow-x: hidden;
+    border: 0;
+    /* border-left : 2px solid rgba(0,0,0,.125) ; */
+    /* border-bottom : 2px solid rgba(0,0,0,.125) ; */
+    /*margin-right: -20vw;*/
+    transition: 1s;
+}
+
+
+.sidebarNav .card-footer {
+    padding: 0;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    border: 0;
+}
+
+.sidebar-inner a {
+    color: rgba(0,0,0,.5);
+}
+
+.sidebarNav a h5:hover {
+    text-decoration: underline;
+    color: black;
+    font-weight: 700;
+    transition: 500ms;
+}
+
+
+
+.sidebar-logo {
+    padding: 1.5rem;
+
+}
+
+.mobileLogo {
+    max-height: 50%;
+    max-width: 50%;
+    text-align: center;
+}
+
+
+
+
+/************************************************  FOOTER  ***********************************************/
+
+#footer{
+
+    background-color: #C7E3CC;
+    margin-top: 1vh;
+    color: white;
+    width: 100%;
+    height: 25px;
+    font-size: 11px;
+}
+
+/************************************************  LOGIN PAGE  ***********************************************/
+
+.login{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    min-height: 100vh;
+    min-width: 100vw;
+    background: linear-gradient(to right, white, #C7E3CC);
+}
+.login-logo-container
+{
+    display: block;
+    min-width: 80vw;
+    margin: 0 auto;
+}
+
+div .errors li{
+    list-style: none;
+}
+
+div .errors ul{
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.alert{
+    margin-bottom: 0;
+}
+
+
+@media screen and (max-width: 992px){
+    .login-logo-container
+    {
+
+    }
+    .login-main{
+
+    }
+}
+
+
+
+/************************************************  RECOVER PASSWORD PAGE  ************************************************/
+
+.password-body
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    min-height: 100vh;
+    min-width: 100vw;
+    background: linear-gradient(to right, white, #C7E3CC);
+}
+
+.password-recovery-container
+{
+    display: block;
+    min-width: 80vw;
+    margin: 0 auto;
+}
+
+.password__container{
+
+}
+
+
+/************************************************  CALENDAR  ************************************************/
+
+/*#GoogleCalendar {*/
+/*    display: flex;*/
+/*    align-items: stretch;*/
+/*    justify-content: center;*/
+/*    width: 100%;*/
+/*    height: 80vh;*/
+/*}*/
+
+/*@media screen and (min-width: 992px){*/
+/*    #GoogleCalendar {*/
+/*        display: flex;*/
+/*        align-items: stretch;*/
+/*        !* width: 100%; *!*/
+/*        height: 70vh;*/
+/*        margin: 0 auto;*/
+/*    }*/
+/*}*/
+/*.GoogleCalendar {*/
+
+/*    border-width:0;*/
+/*    !*min-width: 60vw;*!*/
+/*    !*min-height: 80vh ;*!*/
+/*    width: 90%;*/
+/*    height: 100%;*/
+/*    !*frameborder: 0;*!*/
+/*    !*scrolling: no;*!*/
+/*}*/
+
+#cal__heading a{
+    text-decoration: none;
+    color: #0c5460;
+
+}
+
+#cal__heading a:hover{
+    color: #3cbc8d;
+
+}
+
+
+#calendar th{
+    text-align: center;
+    padding: 10px 0 10px 0;
+
+    /*font-size: 1.5vw;*/
+
+    /*width: 10vw;*/
+}
+
+#calendar .today{
+    background-color: #bee5eb;
+}
+#calendar td{
+    /*max-height: 50px;*/
+    /*max-width: 50px;*/
+    width: var(--cl-width);
+    height: var(--cl-width);
+
+    padding: 5px 0 0 5px;
+}
+
+
+
+/************************************************  IT  ************************************************/
+
+
+.it{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1vh auto;
+}
+
+.it-container{
+
+    max-width: 100%;
+}
+
+@media screen and (max-height: 780px) {
+
+}
+
+/************************************************  Grades  ************************************************/
+
+
+.grades__main__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+
+}
+.grades__header{
+    margin: 3vh auto 3vh;
+}
+
+.grades__header h3{
+    font-size: 2vw;
+    max-font-size: 3vw;
+}
+
+.grades__header h3 a{
+    text-decoration: none;
+    color: #0c5460;
+}
+
+.grades__header h3 a:hover{
+    color: #3cbc8d;
+}
+
+.grades__table {
+    text-align: center;
+}
+
+.grades__table th{
+    font-size: 1vw;
+    max-font-size: 2vw;
+
+}
